@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>メイク方法紹介</title>
+<style>
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  background-color: #fafafa;
+}
+header {
+  background-color: #f4a7b9;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  max-width: 800px; /* 全体幅を制限 */
+  margin: 0 auto; /* 中央寄せ */
+}
+.section .text {
+  flex: 1;
+  font-size: 1em;
+}
+.section .image img {
+  width: 250px; /* 必要に応じて調整 */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .section .image img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  ユーザーの肌に関しての悩みを解消するための商品を紹介！
+</header>
+
+<div class="section">
+  <div class="text">
+    <h3>下地</h3>
+    <p>肌を均一に整えます。</p>
+  </div>
+  <div class="image">
+    <img src="img/下地 (2).jpg">
+  </div>
+</div>
+
+<div class="section">
+  <div class="text">
+    <h3>コンシーラー</h3>
+    <p>ニキビやクマを隠します。</p>
+  </div>
+  <div class="image">
+    <img src="img/コンシーラ (2).jpg">
+  </div>
+</div>
+
+<div class="section">
+  <div class="text">
+    <h3>BBクリーム</h3>
+    <p>自然な仕上がりで一度に。</p>
+  </div>
+  <div class="image">
+    <img src="img/BB.jpg">
+  </div>
+</div>
+
+<div class="section">
+  <div class="text">
+    <h3>ベースメイク</h3>
+    <p>ファンデーション、メイク持ちアップ。</p>
+    <h3>眉メイク</h3>
+    <p>顔の印象を決める重要なポイント。</p>
+    <h3>ハイライト</h3>
+    <p>立体感を演出し、明るさをプラス。</p>
+  </div>
+  <div class="image">
+    <img src="img/ダウンロード (2).jpg">
+  </div>
+</div>
+
+</body>
+</html>
+<!-- 最初のページに戻るボタン -->
+<div style="text-align: center; margin-top: 30px;">
+  <button onclick="goToFirstPage()" 
+          style="padding: 10px 20px; font-size: 16px; border-radius: 8px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+    最初のページに戻る
+  </button>
+</div>
+
+<script>
+  function goToFirstPage() {
+    window.location.href = "index.html"; // 最初のページのURL
+  }
+</script>

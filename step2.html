@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>各ユーザに合ったメンズメイクを紹介！</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  
+    <section>
+       <h1>ユーザーの肌に関しての悩みを解消するための商品を紹介！</h1>
+       </section>
+         <div class="taitol3">
+          <div id="q1">
+    <p>Q1 あなたの肌のタイプは？</p>
+            <label><input type="radio" name="q1" value="1"> 乾燥肌</label>
+  <img src="img/乾燥肌_img-1024x683.webp" alt="乾燥肌" style="width: 250px;">
+
+            <label><input type="radio" name="q1" value="2"> 普通肌</label>
+  <img src="img/4346093_m.jpg" alt="普通肌" style="width: 250px;">
+
+          <br>  <label><input type="radio" name="q1" value="3"> 脂性肌</label>
+      
+  <img src="img/毛穴のある人.jpg" alt="脂性肌" style="width: 250px;">
+
+            <label><input type="radio" name="q1" value="4"> 混合肌</label>
+            
+  <img src="img/combination_skin_img001.jpg" alt="混合肌" style="width: 250px;">
+</div>
+  </div>
+         </div>
+    <div class="taitol3">
+       <div id="q2">
+  <p>Q2 あなたの利用目的は！？</p>
+        <label><input type="radio" name="q2" value="1" onchange="handleQ2Change()"> かっこよくなりたい</label>
+        <label><input type="radio" name="q2" value="2" onchange="handleQ2Change()"> 肌の悩みを解消したい</label>
+      </div>
+       </div>
+  </div>
+     <div class="taitol3">
+      <div id="q3" style="display:none;">
+    <p>Q3 あなた抱えている肌の悩みは？</p>
+            <label><input type="radio" name="q3" value="1"> ニキビ、シミ</label>
+            <label><input type="radio" name="q3" value="2"> 毛穴の開き</label>
+            <label><input type="radio" name="q3" value="3"> くすみ</label>
+            <label><input type="radio" name="q3" value="4"> シワ・たるみ</label>
+      </div>
+  </div>
+</div>
+  <div class="taitol3">
+   <div id="q4" style="display:none;">
+            <p>Q3 あなたがしたいメンズメイクのタイプは？</p>
+            <label><input type="radio" name="q4" value="1"> 身だしなみ系</label>
+            <label><input type="radio" name="q4" value="2"> 韓国系</label>
+            <label><input type="radio" name="q4" value="3"> ジェンダーレス系（中性）</label>
+            <label><input type="radio" name="q4" value="4"> ホスト系</label>
+            <label><input type="radio" name="q4" value="5"> 垢抜け爽やか系</label>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="zikko-box" style="display:none;">
+    <button id="submitBtn">実行</button>
+</div>
+  <script src="script.js"></script> 
+  </body>
+</html>
